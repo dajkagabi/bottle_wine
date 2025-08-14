@@ -1,19 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import hero from "../../assets/hero-wine.jpg";
+import { Link } from "react-router-dom";
+import hero from "../../assets/hero.jpg";
 
 export default function Hero() {
+  motion;
+
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="absolute inset-0 min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: `url(${hero})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
+      <div className="absolute inset-0 bg-black/30 z-10"></div>
 
       {/* Image in center */}
       <motion.div
@@ -22,15 +24,6 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <motion.img
-          src="/wine-bottle.png"
-          alt="Wine Bottle"
-          className="mx-auto w-48 md:w-64 rounded-2xl shadow-lg"
-          initial={{ y: 40, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
-        />
-
         <motion.h1
           className="text-white text-4xl md:text-6xl font-bold mt-8"
           initial={{ y: 20, opacity: 0 }}
@@ -57,7 +50,10 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          Discover More
+        <Link to="wines">
+            Discover More
+        </Link>
+        
         </motion.button>
       </motion.div>
     </section>

@@ -8,12 +8,13 @@ import FoodPairings from './components/FoodPairings/FoodPairings';
 import About from './components/About/About';
 import SearchPage from './components/SearchPage/SearchPage';
 import Favorites from './components/Favorites/Favorites';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
      <>
       <Navbar/>
-      <div className="pt-16">
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/wines" element={<Wines />} />
@@ -23,7 +24,8 @@ function App() {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
-      </div>
+        <Footer/>
+    
     </>
   );
 }

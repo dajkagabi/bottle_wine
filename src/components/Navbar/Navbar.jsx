@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center space-x-2">
             <Wine className="text-red-700" size={24} />
-            <span className="text-xl font-bold text-gray-900">
+            <span className="text-xl font-bold text-red-600">
               Bottle & Wine
             </span>
           </Link>
@@ -30,31 +30,31 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="flex items-center gap-1 text-gray-700 hover:text-red-700"
+              className="flex items-center gap-1 text-red-700 hover:text-red-900"
             >
               <Wine size={18} /> Home
             </Link>
             <Link
               to="/wines"
-              className="flex items-center gap-1 text-gray-700 hover:text-red-700"
+              className="flex items-center gap-1 text-red-700 hover:text-red-900"
             >
               <Grape size={18} /> Wines
             </Link>
             <Link
               to="/regions"
-              className="flex items-center gap-1 text-gray-700 hover:text-red-700"
+              className="flex items-center gap-1 text-red-700 hover:text-red-900"
             >
               <MapPin size={18} /> Regions
             </Link>
             <Link
               to="/food-pairings"
-              className="flex items-center gap-1 text-gray-700 hover:text-red-700"
+              className="flex items-center gap-1 text-red-700 hover:text-red-900"
             >
               <ChefHat size={18} /> Food Pairings
             </Link>
             <Link
               to="/about"
-              className="flex items-center gap-1 text-gray-700 hover:text-red-700"
+              className="flex items-center gap-1 text-red-700 hover:text-red-900"
             >
               <Star size={18} /> About
             </Link>
@@ -64,11 +64,11 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               to="/search"
-              className="flex items-center gap-1 text-gray-700 hover:text-red-700"
+              className="flex items-center gap-1 text-red-700 hover:text-red-900"
             >
               <Search size={18} /> Search
             </Link>
-            <Link to="/favorites" className="text-gray-700 hover:text-red-700">
+            <Link to="/favorites" className="text-red-700 hover:text-red-900">
               <Heart size={18} />
             </Link>
           </div>
@@ -90,49 +90,49 @@ export default function Navbar() {
         <div className="md:hidden bg-white shadow-lg px-4 pb-4 space-y-3">
           <Link
             to="/"
-            className="flex items-center gap-2 text-gray-700 hover:text-red-700"
+            className="flex items-center gap-2 text-red-700 hover:text-red-900"
             onClick={() => setIsOpen(false)}
           >
             <Wine size={18} /> Home
           </Link>
           <Link
             to="/wines"
-            className="flex items-center gap-2 text-gray-700 hover:text-red-700"
+            className="flex items-center gap-2 text-red-700 hover:text-red-900"
             onClick={() => setIsOpen(false)}
           >
             <Grape size={18} /> Wines
           </Link>
           <Link
             to="/regions"
-            className="flex items-center gap-2 text-gray-700 hover:text-red-700"
+            className="flex items-center gap-2 text-red-700 hover:text-red-900"
             onClick={() => setIsOpen(false)}
           >
             <MapPin size={18} /> Regions
           </Link>
           <Link
             to="/food-pairings"
-            className="flex items-center gap-2 text-gray-700 hover:text-red-700"
+            className="flex items-center gap-2 text-red-700 hover:text-red-900"
             onClick={() => setIsOpen(false)}
           >
             <ChefHat size={18} /> Food Pairings
           </Link>
           <Link
             to="/about"
-            className="flex items-center gap-2 text-gray-700 hover:text-red-700"
+            className="flex items-center gap-2 text-red-700 hover:text-red-900"
             onClick={() => setIsOpen(false)}
           >
             <Star size={18} /> About
           </Link>
           <Link
             to="/search"
-            className="flex items-center gap-2 text-gray-700 hover:text-red-700"
+            className="flex items-center gap-2 text-red-700 hover:text-red-900"
             onClick={() => setIsOpen(false)}
           >
             <Search size={18} /> Search
           </Link>
           <Link
             to="/favorites"
-            className="flex items-center gap-2 text-gray-700 hover:text-red-700"
+            className="flex items-center gap-2 text-red-700 hover:text-red-900"
             onClick={() => setIsOpen(false)}
           >
             <Heart size={18} /> Favorites
