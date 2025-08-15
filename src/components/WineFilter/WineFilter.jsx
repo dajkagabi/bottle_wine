@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import WineCard from '../WineCard/WineCard';
-import WineData from '../data/WineData';
+import WineData from '../data/winedata';
 
 
 
