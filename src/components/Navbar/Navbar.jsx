@@ -12,6 +12,8 @@ import {
   X,
 } from "lucide-react";
 
+
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -60,18 +62,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Search & Favorites */}
-          <div className="hidden md:flex items-center gap-4">
-            <Link
-              to="/search"
-              className="flex items-center gap-1 text-red-700 hover:text-red-900"
-            >
-              <Search size={18} /> Search
-            </Link>
-            <Link to="/favorites" className="text-red-700 hover:text-red-900">
-              <Heart size={18} />
-            </Link>
-          </div>
+         
 
           {/* Mobile Hamburger */}
           <div className="md:hidden flex items-center">
@@ -123,20 +114,8 @@ export default function Navbar() {
           >
             <Star size={18} /> About
           </Link>
-          <Link
-            to="/search"
-            className="flex items-center gap-2 text-red-700 hover:text-red-900"
-            onClick={() => setIsOpen(false)}
-          >
-            <Search size={18} /> Search
-          </Link>
-          <Link
-            to="/favorites"
-            className="flex items-center gap-2 text-red-700 hover:text-red-900"
-            onClick={() => setIsOpen(false)}
-          >
-            <Heart size={18} /> Favorites
-          </Link>
+         
+        
         </div>
       )}
     </nav>

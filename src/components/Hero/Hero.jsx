@@ -15,9 +15,9 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-black/30 z-10"></div>
+      <div className="absolute inset-0 bg-black/10 z-10"></div>
 
-      {/* Image in center */}
+     
       <motion.div
         className="relative z-20 text-center max-w-2xl px-4"
         initial={{ opacity: 0, scale: 0.9 }}

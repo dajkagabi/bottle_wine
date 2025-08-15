@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 export default function Starts() {
   return (
     <section className="bg-white py-16">

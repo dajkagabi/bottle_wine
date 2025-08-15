@@ -17,7 +17,7 @@ export default function FeaturedWines() {
 
         <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8">
           
-          {/* Left Side: Image */}
+         
           <div className="flex justify-center md:justify-start">
             <img 
               src={featuredWineImage}
@@ -26,7 +26,6 @@ export default function FeaturedWines() {
             />
           </div>
 
-          {/* Right Side: Content */}
           <div className="flex flex-col space-y-6">
             <h3 className="text-3xl font-bold text-gray-900">Merlot Reserve</h3>
             <p className="text-lg text-gray-700">Napa Valley, California</p>
